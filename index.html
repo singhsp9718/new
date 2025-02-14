@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game 🎯</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎯 Quiz Game 🎯</h1>
+
+        <div id="category-selection">
+            <h2>Select Category:</h2>
+            <button onclick="startQuiz('ssc')">SSC</button>
+            <button onclick="startQuiz('gk')">General Knowledge</button>
+            <button onclick="startQuiz('maths')">Maths</button>
+        </div>
+
+        <div id="quiz-container" style="display: none;">
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <p id="timer">⏳ Time Left: <span id="time">90</span> seconds</p>
+            <p id="progress">Question <span id="current-question">1</span> of 20</p>
+        </div>
+
+        <div id="result-container" style="display: none;">
+            <h2>Your Score: <span id="score"></span>/20</h2>
+            <button onclick="location.reload()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
